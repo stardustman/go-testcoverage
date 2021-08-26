@@ -4,6 +4,9 @@ on:
       - main
     paths-ignore:
       - "**/*.md"
+      
+  push:
+    branches: [ main ]
   
 jobs:
   test:
