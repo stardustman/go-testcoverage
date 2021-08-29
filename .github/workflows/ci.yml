@@ -30,6 +30,10 @@ jobs:
     # - name: Vet
     #   run: |
     #     go vet ./...
+    
+    - name: get changes
+      run: |
+           echo ${{ github.event.commits[0].message }}
 
     - name: Unit tests
       run: |
