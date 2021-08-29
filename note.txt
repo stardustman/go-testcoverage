@@ -1,0 +1,9 @@
+go-testcoverage ➤ go test -coverprofile=c.out                                                                                                                                                                   git:main
+PASS
+coverage: 33.3% of statements
+ok      github.com/go-testcoverage      0.516s
+go-testcoverage ➤ go tool cover -func=c.out                                                                                                                                                                    git:main*
+github.com/go-testcoverage/calculator.go:3:     Add             100.0%
+github.com/go-testcoverage/calculator.go:7:     Subtract        0.0%
+github.com/go-testcoverage/calculator.go:14:    Multiply        0.0%
+total:                                          (statements)    33.3%      注：使用的是这一行的数据

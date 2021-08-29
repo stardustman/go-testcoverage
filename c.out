@@ -1,0 +1,4 @@
+mode: set
+github.com/go-testcoverage/calculator.go:3.24,5.2 1 1
+github.com/go-testcoverage/calculator.go:7.29,12.2 1 0
+github.com/go-testcoverage/calculator.go:14.28,16.2 1 0
