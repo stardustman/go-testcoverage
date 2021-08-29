@@ -33,8 +33,9 @@ jobs:
     
     - name: get changes
       run: |
-           #echo ${{ github.event.commits[0].message }}
+           # echo ${{ github.event.commits[0].message }}
            echo ${{ github.event.head_commit.message }}
+           echo "${{toJSON(github.event)}}"
 
     - name: Unit tests
       run: |
