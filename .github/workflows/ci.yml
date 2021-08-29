@@ -31,11 +31,11 @@ jobs:
     #   run: |
     #     go vet ./...
     
-    - name: get changes
+    - name: Get changes from git commit
       run: |
            # echo ${{ github.event.commits[0].message }}
            echo ${{ github.event.head_commit.message }}
-           echo "${{toJSON(github.event)}}"
+           # echo "${{toJSON(github.event)}}"
 
     - name: Unit tests
       run: |
